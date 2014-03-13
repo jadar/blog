@@ -1,0 +1,12 @@
+.post div {
+    /*margin-left: 50px;*/
+    text-indent: 50px;
+}
+
+.post h3 {
+    display: inline;
+}
+
+.post span {
+    text-decoration: underline;
+}

@@ -11,8 +11,9 @@ order: 3
 {% for post in posts_collate limit:8 %}
     {% if post != null %}
         <li class="post">
-            <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-            {{ post.excerpt }}
+            {{ post.date | date_to_string }} &raquo; <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+            <div>{{ post.excerpt }}</div>
+            <span><a href="{{ post.url }}">Read More</a></span>
         </li>   
     {% endif %}
 {% endfor %}
