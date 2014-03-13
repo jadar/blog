@@ -19,3 +19,8 @@ h1, h2 {
 .sidebar-about h1 {
   font-family: "Ubuntu Mono", serif;
 }
+
+p.small {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
