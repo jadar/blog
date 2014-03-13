@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Blog
-order: 3
+title: Home
+order: 1
 ---
 
 {% assign posts_collate = site.posts %}
 
-<h1>Latest Posts</h1>
+<h2>Latest Posts</h2>
 <ul>
-{% for post in posts_collate limit:8 %}
+{% for post in posts_collate limit:4 %}
     {% if post != null %}
         <li class="post">
             {{ post.date | date_to_string }} &raquo; <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
@@ -21,7 +21,7 @@ order: 3
 
 
 {% capture o%}
-#Blog Posts
+#All Posts
 {% endcapture %}
 {{ o | markdownify }}
 {% include JB/posts_collate %}

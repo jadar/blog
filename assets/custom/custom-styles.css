@@ -5,8 +5,17 @@
 
 .post h3 {
     display: inline;
+    border-bottom: initial;
 }
 
 .post span {
     text-decoration: underline;
+}
+
+h1, h2 {
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar-about h1 {
+  font-family: "Ubuntu Mono", serif;
 }
