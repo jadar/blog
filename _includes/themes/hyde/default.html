@@ -16,7 +16,10 @@
         <link rel="stylesheet" href="{{ ASSET_PATH }}/css/poole.css">
         <link rel="stylesheet" href="{{ ASSET_PATH }}/css/syntax.css">
         <link rel="stylesheet" href="{{ ASSET_PATH }}/css/hyde.css">
-        <link rel="stylesheet" href="{{ BASE_PATH }}/assets/custom/custom-styles.css";
+        <link rel="stylesheet" href="{{ BASE_PATH }}/assets/custom/custom-styles.css">
+        <link rel="stylesheet" href="{{ ASSET_PATH }}/css/social-icons.css">
+        <link rel="stylesheet" href="https://raw.github.com/noizwaves/bootstrap-social-buttons/v1.0.0/social-buttons.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
     
         <!-- Icons -->
@@ -33,6 +36,9 @@
     <div class="sidebar">
         <div class="container sidebar-sticky">
             <div class="sidebar-about">
+            
+            
+            
                 <h1>{{ site.title }}</h1>
                  <p class="lead">{{ site.description }}</p>
             </div>
@@ -60,6 +66,9 @@
             {% if site.version != false %}
                 <li class="sidebar-nav-item">Currently v{{ site.version }}</li>
             {% endif %}
+            
+                <a href="http://twitter.com/{{ site.author.twitter }}"><button class="btn btn-twitter"><i class="fa fa-twitter"></i> | Twitter</button></a>
+                <a href="http://github.com/{{ site.author.github }}"><button class="btn btn-github"><i class="fa fa-github"></i> | GitHub</button></a>
             </ul>
             </nav>
             <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
