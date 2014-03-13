@@ -1,0 +1,26 @@
+---
+layout: page
+title: Blog
+order: 3
+---
+
+{% assign posts_collate = site.posts %}
+
+<h1>Latest Posts</h1>
+<ul>
+{% for post in posts_collate limit:8 %}
+    {% if post != null %}
+        <li class="post">
+            <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+            {{ post.excerpt }}
+        </li>   
+    {% endif %}
+{% endfor %}
+</ul>
+
+
+{% capture o%}
+#Blog Posts
+{% endcapture %}
+{{ o | markdownify }}
+{% include JB/posts_collate %}
