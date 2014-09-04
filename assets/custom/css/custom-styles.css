@@ -29,3 +29,11 @@ p.small {
     background-color: #333;
     font-size: 14px;
 }
+
+.gist {
+    font-size: 14px;
+}
+
+.gist div {
+    text-indent: 0px;
+}
